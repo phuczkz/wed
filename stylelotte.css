@@ -1,0 +1,356 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    color: black;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF5B6A;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+}
+
+.right-menu a {
+    margin-left: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.right-menu a.download-app {
+    border-color: #FF5B6A;
+    background-color: #FF5B6A;
+    color: #fff;
+}
+.promo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.promo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: #f8eaea;
+    margin: 20px 300px;
+    border-radius: 10px;
+}
+
+.category {
+    display: flex;
+    text-align:center;
+
+}
+
+.category img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+
+}
+
+.category a {
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #FF5B6A;
+
+}
+
+.special-deals {
+    padding: 20px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.special-deals h2 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FF5B6A;
+    text-align: left;
+}
+
+.deals {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.deal-item {
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: relative;
+}
+
+.deal-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.deal-item p {
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+.deal-item a.current-price {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #FF5B6A;
+    font-size: 20px;
+}
+
+.deal-item .old-price {
+    display: block;
+    font-size: 16px;
+    color: gray;
+    text-decoration: line-through;
+    margin-top: -10px;
+}
+
+.boxx {
+    width: 50px;
+    height: 50px;
+    background-color: #FF5B6A;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxx::before {
+    content: "+";
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.news {
+    padding: 20px 0;
+    background: #ffffff;
+    text-align: center;
+
+}
+
+.news h2 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FF5B6A;
+    text-align: left;
+}
+
+.news-items {
+    display: flex;
+    justify-content:space-evenly;
+   
+
+}
+
+.news-item {
+    width: 15%;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: center;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px ;
+
+}
+
+.news-item img {
+    width: 100%;
+    
+}
+
+.news-item p {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+}
+.news-item a{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #f45363;
+    align-items: flex-end;
+}
+
+
+.down {
+
+    display: flex;
+    margin-top: 50px;
+    padding: 40px 40px;
+    background: #f8eaea;
+    width: 100%;
+    justify-content: space-between;
+}
+.down img {
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+}
+.down p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 80%;
+    font-weight: bold;
+}
+.down input{
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+.down button{
+    height: 30px;
+    width: 60px;
+}
+
+/* CSS cho phần .info */
+.info ul {
+    list-style-type: none; /* Xóa dấu chấm phía trước */
+    padding: 0;
+    margin: 0;
+}
+
+.info ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+.info ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.info ul li a:hover {
+    color: #f45363;
+}
+
+/* CSS cho phần .support */
+.support ul {
+    list-style-type: none; /* Xóa dấu chấm phía trước */
+    padding: 0;
+    margin: 0;
+}
+
+.support ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+.support ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.support ul li a:hover {
+    color: #f45363;
+}
+
+.follow ul {
+    list-style-type: none;
+}
+.follow ul a{
+    text-decoration: none;
+    list-style-type : none;
+    color: black;
+}
+.follow h3 ul li a{
+    margin-left:100px ;
+}
+
+.follow ul li a:hover{
+    color:#f45363 ;
+}
+.follow ul a img{
+    margin-top: 10px;
+    width: 200px;
+    margin-right: 100px
+}
+footer {
+    background: #e48893;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer strong {
+    font-weight: bold;
+}
+
+footer .light-text {
+    color: #030303;
+    font-weight: normal;
+}
